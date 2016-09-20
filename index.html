@@ -12,8 +12,17 @@
 
 <script>
 	function myFunction() {
-    		var x = console.log(document.cookie);
-    		document.getElementById("demo").innerHTML = "Cookies associated with this document: " + x;
+    		String mtr = "";
+ 
+		Cookie[] cookies = request.getCookies();
+		if (cookies != null) {
+    		for(int i=0; i < cookies.length; i++) {
+       			 Cookie c = cookies[i];
+        	if (c.getName().equals("prusr")) {
+            		mtr = c.getValue();
+        }
+    }
+}
 }
 </script>
 
